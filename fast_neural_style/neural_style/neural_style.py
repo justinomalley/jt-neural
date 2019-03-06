@@ -16,7 +16,6 @@ import utils
 from transformer_net import TransformerNet
 from vgg import Vgg16
 
-
 def check_paths(args):
     try:
         if not os.path.exists(args.save_model_dir):
@@ -111,10 +110,12 @@ def train(args):
 
     # save model
     transformer.eval().cpu()
-    save_model_filename = "epoch_" + str(args.epochs) + "_" + str(time.ctime()).replace(' ', '_') + "_" + str(
+
+    dirname = os.path.realpath('.')
+    save_model_filename = "epoch_" + str(args.epochs) + "_" + str(time.ctime()).replace(' ', '_').replace(':', '_') + "_" + str(
         args.content_weight) + "_" + str(args.style_weight) + ".model"
-    save_model_path = os.path.join(args.save_model_dir, save_model_filename)
-    print(save_model_path)
+    #save_model_filename = "barbara.model"
+    save_model_path = os.path.join(dirname, args.save_model_dir, save_model_filename)
     torch.save(transformer.state_dict(), save_model_path)
 
     print("\nDone, trained model saved at", save_model_path)
