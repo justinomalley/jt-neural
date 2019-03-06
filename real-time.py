@@ -6,14 +6,14 @@ from PIL import Image
 import cv2
 import torch
 from torchvision import transforms
-from model.transformer_net import TransformerNet
+from models.transformer_net import TransformerNet
 import time
 
 
 # Get paths and set vars
 weights_fname = "redcamtile.pth"
 script_path = os.path.dirname(os.path.abspath(__file__))
-path_to_weights = os.path.join(script_path, "model", weights_fname)
+path_to_weights = os.path.join(script_path, "models", weights_fname)
 resolution = (640, 480)
 
 # Change to GPU if desired
