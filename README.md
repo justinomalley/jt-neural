@@ -21,4 +21,3 @@ To cut a video into frames, put your video into ./input/videos (make sure it is 
 To stylize the frames, run this:
 `python real-time.py`
 
-python neural_style/neural_style.py train --dataset train--style-image images/redcamgrid4x5.jpg --save-model-dir ../model/ --epochs 3 --cuda 1
