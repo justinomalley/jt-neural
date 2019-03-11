@@ -9,7 +9,7 @@ from torchvision import transforms
 from utils.transformer_net import TransformerNet
 
 # Get paths and set vars
-weights_fname = "newstyle.model"
+weights_fname = "grid.model"
 script_path = os.path.dirname(os.path.abspath(__file__))
 path_to_weights = os.path.join(script_path, weights_fname)
 resolution = (640, 480)

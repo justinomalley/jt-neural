@@ -20,7 +20,7 @@ import time
 """
 
 # Get paths and set vars
-weights_fname = "newstyle.model"
+weights_fname = "4x4.model"
 script_path = os.path.dirname(os.path.abspath(__file__))
 path_to_weights = os.path.join(script_path, "models", weights_fname)
 resolution = (640, 480)

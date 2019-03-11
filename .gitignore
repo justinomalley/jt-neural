@@ -1,4 +1,5 @@
-
+*.pth
+*.model
 *.jpg
 *.png
 *.mp4
