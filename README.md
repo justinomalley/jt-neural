@@ -14,7 +14,7 @@ This repository is a sandbox for experimenting with neural style transfer networ
 
 ### To train a network on a new style image:
 * `cd fast-neural-style`
-* `python neural_style/neural_style.py train --dataset train --style-image ../input/images/<style-image-name>.jpg --save-model-dir ../models/ --epochs 2 --cuda 1` (Example: `python neural_style/neural_style.py train --dataset train--style-image images/space.jpg --save-model-dir models --epochs 3 --cuda 1`)
+* `python neural_style/neural_style.py train --dataset train --style-image ../input/images/<style-image-name>.jpg --save-model-dir ../models/ --epochs 2 --cuda 1` (Example: `python neural_style/neural_style.py train --dataset train --style-image images/image.jpg --save-model-dir models --epochs 2 --cuda 1`)
 
 ### To stylize a video, change the name of the variable `weights_fname` in `stylize_video.py` to the style model you would like to use and run the following:
 * `python stylize_video.py <name-of-video>.mp4` (Note: The argument is the name of the video without its path. Make sure it is in videos/input prior to execution.)
