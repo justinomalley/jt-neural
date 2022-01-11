@@ -9,7 +9,7 @@ This repository is a sandbox for experimenting with neural style transfer networ
 * Input videos should be saved to input/videos/
 * Models are be saved to fast-neural-style/models
 * Images are saved to output/images/
-* Videos are to output/videos/
+* Videos are saved to output/videos/
 * We currently save models in fast-neural-style/models
 
 ### To train a network on a new style image:
